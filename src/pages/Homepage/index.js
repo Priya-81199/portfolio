@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { Link } from 'react-router-dom';
 import MailIcon from '@material-ui/icons/Mail';
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -191,6 +192,20 @@ const HomePage = () => {
                         /><br/>
                         <TextField
                             className={classes.margin}
+                            id="input-with-icon-textfield"
+                            label="Email"
+                            variant="outlined"
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                <AlternateEmailIcon style={{color:'#ccd6f6'}}/>
+                                </InputAdornment>
+                            ),
+                            
+                            }}
+                        /><br/>
+                        <TextField
+                            className={classes.margin}
                             multiline="true"
                             rows = "3"
                             id="input-with-icon-textfield"
@@ -225,7 +240,7 @@ const HomePage = () => {
                                 <a href="https://in.linkedin.com/in/rajscode"><li><LinkedInIcon/></li></a>
                             </ul>
                             <center>
-                                <a href="mailto:rajs80266@gmail.com">
+                                <a href="mailto:rajs80266@gmail.com" style={{fontFamily:'monospace!important'}}>
                                     rajs80266@gmail.com
                                 </a>
                             </center>

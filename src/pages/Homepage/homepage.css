@@ -329,7 +329,7 @@ a {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #8892b0; 
-  }
+}
 
 :root {
     --dark-navy: #020c1b;
