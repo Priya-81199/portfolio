@@ -4,16 +4,63 @@ h1 {
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     font-size: clamp(14px,5vw,16px);
     font-weight: 400;
+    animation: 1s ease-in 0s 1 slideInFromLeft;
 }
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.profile-img{
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+.nav-bar{
+    animation: 1s ease-out 0s 1 slideInFromTop; 
+}
+
 .big-heading {
     margin: 0px;
     font-size: clamp(40px, 8vw, 80px);
+    animation:1.5s ease-out 0s 1 slideInFromLeft;
 }
 
 h2{
     font-weight: 600;
     color: #ccd6f6;
     line-height: 1.1;
+    animation: 1s ease-out 0s 1 slideInFromTop; 
 }
 h3{
     margin-top: 10px;
@@ -36,6 +83,7 @@ body{
 p{
     margin: 20px 0px 0px;
     max-width: 500px;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
 }
 p > a {
     display: inline-block;
@@ -64,6 +112,7 @@ p > a:hover {
 }
 .btn{
     margin-right: 20px;
+    animation:2s ease-out 0s 1 slideInFromLeft;
 }
 
 .email-link {
@@ -103,6 +152,7 @@ p > a:hover {
     /* margin-left:  0.5rem; */
     font-size: 12px;
     font-weight: bolder;
+
 }
 .nav-li:hover{
     border: 2px dotted #64ffda;
@@ -173,6 +223,7 @@ hr{
 }
 
 .stands{
+    animation: 1s ease-out 0s 1 slideInFromBottom;
     width: 40px;
     position: fixed;
     bottom: 0px;
@@ -225,6 +276,7 @@ a {
 }
 
 .stands-social{
+    animation: 1s ease-out 0s 1 slideInFromBottom;
     width: 40px;
     position: fixed;
     bottom: 0px;
@@ -258,6 +310,7 @@ a {
 .footer-links a {
     padding: 10px!important;
 }
+
 
 :root {
     --dark-navy: #020c1b;

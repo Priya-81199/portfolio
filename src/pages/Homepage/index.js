@@ -30,13 +30,8 @@ const HomePage = () => {
     
     return(
         <div>
-            <header>
-                <nav style={{
-                //   position: 'fixed',
-                //   top: '0px',
-                //   left: 'auto',
-                //   zIndex: '10',  
-                }}>
+            <header className='nav-bar'>
+                <nav>
                     <div>
                         <ul style={{display:'flex',justifyContent:'center',margin:'20px'}} className="nav-ul">
                             <a href="/#about"><li className = "nav-li">About</li></a>
@@ -49,7 +44,7 @@ const HomePage = () => {
                 </nav>
             </header>
             <div style={{width:(height<width)?'70%':'90%',margin:'auto',marginTop:'40px'}}>
-                <div className="fadeup-enter-done" id="about" style={{transitionDelay: '100ms'}}>
+                <div id="about" style={{transitionDelay: '100ms'}}>
                     <h1>Hi, my name is</h1>
                 </div>
                 <h2 className='big-heading'>Raj Shah.</h2>
@@ -71,7 +66,7 @@ const HomePage = () => {
                         
                     </div>
                     <div style={{margin:'auto',padding:'10px',border: '2px solid #64ffda',borderRadius: (height<width)?width*0.18:width*0.36,height:(height<width)?width*0.18:width*0.36,width:(height<width)?width*0.18:width*0.36}}>
-                        <img src={Image} height={(height<width)?width*0.18:width*0.36} width={(height<width)?width*0.18:width*0.36} style={{borderRadius:(height<width)?width*0.18:width*0.36,padding:'10px'}}/>
+                        <img src={Image} height={(height<width)?width*0.18:width*0.36} width={(height<width)?width*0.18:width*0.36} style={{borderRadius:(height<width)?width*0.18:width*0.36,padding:'10px'}} className='profile-img'/>
                     </div>
                 </div>
                 <br/><br/>
